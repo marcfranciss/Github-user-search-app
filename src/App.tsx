@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Users } from "./users";
 import Tables from "./Tables";
+import GithubUsers from "./GithubUsers";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -26,7 +27,7 @@ function App() {
   };
   return (
     <>
-      <input
+      {/* <input
         onChange={(e) => setQuery(e.target.value)}
         type='text'
         name=''
@@ -40,8 +41,9 @@ function App() {
         <option value='firstName'>First Name</option>
         <option value='lastName'>Last Name</option>
         <option value='email'>Email</option>
-      </select>
-      <Tables data={search(Users)} />
+      </select> */}
+      {/* <Tables data={search(Users)} /> */}
+      <GithubUsers />
       {/* <ol>
         {Users.filter((users) =>
           users.first_name.toLocaleLowerCase().includes(query)
